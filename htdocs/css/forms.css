@@ -1,0 +1,36 @@
+form table td {
+    padding: .5em 0;
+}
+.labelcol {
+    padding-right: 1em;
+}
+input.has_error, textarea.has_error, select.has_error {
+    background: #f66;
+}
+input, textarea {
+    padding: .2em;
+}
+input, select, textarea, fieldset {
+    border: 1px solid #666;
+}
+fieldset {
+    padding: .5em;
+}
+
+legend {
+    font-weight: bold;
+}
+label.required {
+    font-weight: bold;
+}
+.fieldhelp {
+    display: block;
+    font-size: 0.8em;
+    color: #aaa;
+}
+.fielderror {
+    display: block;
+    color: red;
+    font-weight: bold;
+}
+

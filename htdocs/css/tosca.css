@@ -1,0 +1,325 @@
+/*
+    #597984 (green)
+    #94ADA7 (lighter green)
+    #C5CD92 (light brownish green)
+    #959874 (light brown)
+    #626546 (brown)
+*/
+
+* {
+    font-size: 1em;
+    text-decoration: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html, body {
+    color: #222;
+	font: medium/125% "Myriad Web", "Myriad Pro", "Lucida Grande", "Trebuchet MS", Tahoma, Helvetica, Arial,  sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #959874;
+    margin: 0.7em 0 0.3em;
+}
+
+h6 { font-size: 1.0em }
+h5 { font-size: 1.0em }
+h4 { font-size: 1.1em }
+h3 { font-size: 1.2em }
+h2 { font-size: 1.3em }
+h1 { font-size: 1.5em }
+
+p {
+    margin: 0 0 1em;
+}
+
+/* Header, footer & menu
+ * ---------------------------------------------------------------- */
+
+#header {
+    background: url('../images/header-bg.jpg') repeat-x;
+    height: 86px;
+    color: #FFF;
+}
+
+#header #logo {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+}
+
+#header h1 {
+    display: none;
+}
+
+#footer {
+    margin: 2em 0.5em;
+    padding: 0.5em;
+    border-top: 1px solid #597984;
+    text-align: right;
+    font-size: 0.8em;
+}
+
+#footer,
+#footer :link,
+#footer :visited {
+    color: #597984;
+}
+
+#main-menu {
+    display: block;
+    position: absolute;
+    right: 96px;
+    top: 58px;
+}
+#current-user {
+    display: block;
+    color: #333;
+    font-size: .8em;
+    position: absolute;
+    right: 10px;
+    top: 85px;
+    z-index: 500;
+}
+
+#main-menu li {
+    display: inline;
+}
+
+#main-menu li a {
+    color: #EEE !important;
+    padding-right: 0.5em;
+    font-size: 14px;
+    line-height: 100%;
+}
+
+#main-menu li a:hover {
+    color: #FFF !important;
+    text-decoration: underline;
+}
+
+#main-menu li a.active {
+    color: #FFF !important;
+    font-weight: bold;
+}
+
+#icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/* Pages, columns & sidebars
+ * ---------------------------------------------------------------- */
+
+#page {
+    margin: 2em 1%;
+}
+
+#sidebar-right, .sphinxsidebar {
+    float: right;
+    width: 20%;
+    padding: 0.5em;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: #eeeeee;
+}
+
+.sidebar {
+    background: #EEE;
+    color: #777;
+}
+
+
+/* Content elements
+ * ---------------------------------------------------------------- */
+
+.content {
+    margin-right: 240px;
+}
+
+
+.content :link,
+.content :visited {
+    text-decoration: underline;
+    color: #597984;
+}
+
+.content :link:hover,
+.content :visited:hover {
+    color: #94ADA7;
+}
+
+.content dl {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    background: #EEE;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.content dt,
+.content strong {
+    font-weight: bold;
+    color: #597984;
+}
+
+.content dd {
+    margin: 0 0.2em 1em;
+    padding: 0 0.5em;
+    border-left: 2px solid #94ADA7;
+    color: #444;
+}
+
+.content ul li {
+    padding-left: 16px;
+    margin: 0 0 0.5em;
+    background: url('../images/bullet.gif') no-repeat 2px 7px;
+}
+
+.content ul {
+    margin-bottom: 0.5em;
+}
+
+.content .source {
+    font-family: "Courier New", Courier, monospace, fixed;
+    padding: 0.3em 0.5em;
+    margin: 0 0 1em;
+    border: 1px solid #959874;
+    color: #023;
+    line-height: 120%;
+}
+
+
+/* Sidebar
+ * ---------------------------------------------------------------- */
+
+.sidebar {
+    font-size: 0.8em;
+}
+
+.sidebar h3 {
+    font-size: 1.5em;
+    margin: 0.5em 0 0.2em;
+    color: #597984;
+}
+
+.sidebar p {
+    margin-bottom: 1em;
+}
+
+.sidebar :link,
+.sidebar :visited {
+    color: #597984;
+    text-decoration: underline;
+}
+
+/* Crumbs
+ * ---------------------------------------------------------------- */
+
+#crumbs {
+    position: absolute;
+    left: 10px;
+    top: 85px;
+    font-size: 0.8em;
+    width: 100%;
+    z-index: 400;
+}
+
+#crumbs li {
+    margin-right: 10px;
+    padding-left: 10px;
+    background: transparent url(../images/bullet.gif) left center no-repeat;
+    float: left;
+}
+
+#crumbs li *:visited,
+#crumbs li:link {
+    border-bottom: none;
+}
+#crumbs li a:hover {
+    border-bottom: solid 1px #597984;
+}
+
+#crumbs li.no-bullet {
+    background: none;
+    padding-left: 0;
+}
+#crumbs li.last {
+    float: none;
+    color: #597984;
+    font-weight: bold;
+}
+
+/* Trac override
+ * ---------------------------------------------------------------- */
+#content li {
+    margin: 0 0 .4em 16px;
+    list-style-image: url('../images/bullet.gif');
+}
+
+#content ul {
+    padding: .7em;
+}
+
+#trac h6 { font-size: 1.0em }
+#trac h5 { font-size: 1.0em }
+#trac h4 { font-size: 1.0em }
+#trac h3 { font-size: 1.1em }
+#trac h2 { font-size: 1.2em }
+#trac h1 { font-size: 1.4em }
+
+* :link,
+* :visited,
+dt em,
+.milestone .info h2 em
+{
+    color: #597984;
+}
+
+div.wiki table {
+    border: solid #666 1px;
+    border-collapse: collapse;
+}
+
+div.wiki table th {
+    border: solid #999 1px;
+    padding: 0.4em;
+    font-weight: bold;
+}
+
+div.wiki table td {
+    border: solid #666 1px;
+    padding: 0.2em;
+}
+
+/* Hg override
+ * ---------------------------------------------------------------- */
+
+#hg-content table *:link,
+#hg-content table *:visited
+{
+    color: #222222;
+    border-bottom: dotted 1px #999;
+}
+
+.repository-actions {
+    border: solid #333 1px;
+    padding: .5em;
+    margin: 1em 0;
+}
+
+.project-download-info {
+    margin-left: 0.7em;
+}

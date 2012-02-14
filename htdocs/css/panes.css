@@ -1,0 +1,21 @@
+
+#pane_container {
+        width:950px;
+        margin:0 auto;
+}
+
+.pane {
+        width: 425px;
+
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+}
+
+#left {
+        float:left;
+}
+
+#right {
+        float:right;
+}

@@ -1,0 +1,19 @@
+<div class="highlight"><pre><span class="sd">&quot;&quot;&quot; The most basic form with ToscaWidgets 1 &quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">tw.forms</span> <span class="kn">as</span> <span class="nn">twf</span>
+
+<span class="n">movie_form</span> <span class="o">=</span> <span class="n">twf</span><span class="o">.</span><span class="n">TableForm</span><span class="p">(</span>
+    <span class="s">&#39;movie_form&#39;</span><span class="p">,</span>
+    <span class="n">action</span><span class="o">=</span><span class="s">&#39;save_movie&#39;</span><span class="p">,</span>
+    <span class="n">children</span><span class="o">=</span><span class="p">[</span>
+        <span class="n">twf</span><span class="o">.</span><span class="n">HiddenField</span><span class="p">(</span><span class="s">&#39;id&#39;</span><span class="p">),</span>
+        <span class="n">twf</span><span class="o">.</span><span class="n">TextField</span><span class="p">(</span><span class="s">&#39;title&#39;</span><span class="p">),</span>
+        <span class="n">twf</span><span class="o">.</span><span class="n">TextField</span><span class="p">(</span><span class="s">&#39;year&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
+        <span class="n">twf</span><span class="o">.</span><span class="n">CalendarDatePicker</span><span class="p">(</span><span class="s">&#39;release_date&#39;</span><span class="p">),</span>
+        <span class="n">twf</span><span class="o">.</span><span class="n">SingleSelectField</span><span class="p">(</span><span class="s">&#39;genera&#39;</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="p">[</span>
+            <span class="s">&#39;&#39;</span><span class="p">,</span> <span class="s">&#39;Action&#39;</span><span class="p">,</span> <span class="s">&#39;Comedy&#39;</span><span class="p">,</span> <span class="s">&#39;Other&#39;</span>
+        <span class="p">]),</span>
+        <span class="n">twf</span><span class="o">.</span><span class="n">TextArea</span><span class="p">(</span><span class="s">&#39;description&#39;</span><span class="p">),</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+</pre></div>

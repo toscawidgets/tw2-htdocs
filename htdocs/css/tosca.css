@@ -60,7 +60,11 @@ p {
     display: none;
 }
 
+.clear {
+    clear: both;
+}
 #footer {
+    clear: both;
     margin: 2em 0.5em;
     padding: 0.5em;
     border-top: 1px solid #597984;

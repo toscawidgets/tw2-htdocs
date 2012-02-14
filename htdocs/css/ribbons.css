@@ -1,0 +1,35 @@
+.ribbon {
+        /* nothing, lebowski. */
+}
+
+.ribbon h2 {
+        text-align: left;
+        position: relative;
+        margin-left: 270px;
+        margin-right: -20px;
+        padding: 8px;
+        background-image: -moz-linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,0));
+        background-image: -webkit-linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,0));
+        background-image: -o-linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,0));
+        background-image: -ms-linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,0));
+        background-image:  linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,0));
+        -moz-box-shadow: 0 2px 0 rgba(0,0,0,.3);
+        -webkit-box-shadow: 0 2px 0 rgba(0,0,0,.3);
+        box-shadow: 0 2px 0 rgba(0,0,0,.3);
+        color: #fff;
+        background: #5c5c5c;
+}
+
+.ribbon h2:after {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-color: transparent;
+        bottom: -10px;
+}
+
+.ribbon h2:after {
+        border-width: 0 0 10px 10px;
+        border-left-color: #3a3a3a;
+        right: 0;
+}

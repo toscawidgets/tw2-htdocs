@@ -1,9 +1,11 @@
 .syntax {
         padding: 10px;
+        padding-top: 35px;
         -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
         border-radius: 15px;
 }
+div.highlight { margin-top: -70px; }
 .syntax .hll { background-color: #404040 }
 .syntax  { background: #202020; color: #d0d0d0 }
 .syntax .c { color: #999999; font-style: italic } /* Comment */
